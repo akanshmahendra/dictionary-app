@@ -1,1 +1,85 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --back-1: rgb(5, 5, 5);
+  --back-2: rgb(31, 31, 31);
+  --back-3: rgb(46, 46, 46);
+  --back-4: rgb(59, 59, 59);
+  --gray-1: rgb(130, 130, 130);
+  --white: rgb(255, 255, 255);
+  --purple: rgb(164, 69, 237);
+  --red: rgb(255, 82, 82);
+  --app-font: 'Shantell Sans';
+}
+
+.light-theme {
+  --background-color: var(--white);
+  --text-color: var(--back-1);
+}
+
+.dark-theme {
+  --background-color: var(--back-1);
+  --text-color: var(--white);
+}
+
+*,
+*::before,
+*::after {
+  font-family: var(--app-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 100%;
+}
+
+.padding {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  max-width: 46rem;
+}
+
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--back-3);
+  opacity: 0.25;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--back-3);
+  opacity: 0.25;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--back-3);
+  opacity: 0.25;
+}
+
+button {
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
